@@ -2,6 +2,8 @@ import { Card } from "react-bootstrap";
 
 const Book = ({ book, changeBook, bookSelected }) => (
   <Card
+    // the ? is called OPTIONAL CHAINING
+
     className={bookSelected?.id === book.id ? "border-thick mt-3" : "mt-3"}
     onClick={() => changeBook(book)}
     style={{ cursor: "pointer" }}

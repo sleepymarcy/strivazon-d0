@@ -44,7 +44,11 @@ class BookDetail extends Component {
                   <span className="font-weight-bold">Price:</span>
                   {this.state.book.price}
                 </p>
-                <Button color="primary" onClick={() => {}}>
+                <Button color="primary" onClick={() => {
+                  // from here I want to be able to add this element to the cart
+                  // so to interact with the cart[] living into App.js
+                  this.props.addToCart(this.state.book)
+                }}>
                   ADD TO CART
                 </Button>
               </Col>

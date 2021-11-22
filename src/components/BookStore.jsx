@@ -40,6 +40,8 @@ class BookStore extends Component {
         <Col md={8}>
           <BookDetail
             bookSelected={this.state.bookSelected}
+            addToCart={this.props.addToCart}
+          // this is called PROP DRILLING
           />
         </Col>
       </Row>
